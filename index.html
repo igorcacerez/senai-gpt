@@ -16,6 +16,9 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/png">
+
+    <!-- Script JS -->
+    <script src="assets/js/script.js" defer></script>
 </head>
 <body>
     
@@ -33,9 +36,13 @@
         <!-- Caixa de Busca -->
         <div class="busca">
             <input id="texto" type="text" placeholder="Faça sua busca" />
-            <button type="button">
+            <button type="button" id="btn">
                 <img src="assets/img/microphone.png" alt="Microfone" />
             </button>
+        </div>
+
+        <!-- Respostas serão exibidas aqui -->
+        <div id="resposta">
         </div>
 
         <!-- Logo do SENAI -->

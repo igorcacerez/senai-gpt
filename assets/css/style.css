@@ -91,6 +91,12 @@ img {
     max-width: 100px;
 }
 
+#resposta {
+    max-height: 250px;
+    width: 90%;
+    overflow: auto;
+}
+
 
 @media (max-width: 500px) {
     .conteudo .logo h1 {
