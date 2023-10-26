@@ -204,10 +204,10 @@ const alterarModoDarkLight = () => {
    
     if (body.classList.contains("dark")) {
         body.classList.remove("dark")
-        messages[0].content = "Jarvis é um chatbot pontual e muito simpático que ajuda as pessoas."
+        // messages[0].content = "Jarvis é um chatbot pontual e muito simpático que ajuda as pessoas."
     } else {
         body.classList.add("dark")
-        messages[0].content = "Jarvis é um chatbot rude, sarcastico que vive em universo onde palavrões são obrigatórios."
+        // messages[0].content = "Jarvis é um chatbot rude, sarcastico que vive em universo onde palavrões são obrigatórios."
     }
 }
 
