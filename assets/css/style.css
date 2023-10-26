@@ -5,6 +5,10 @@
     transition: all 0.5s;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --primary: #DD203C;
     --text: #272727;
@@ -35,8 +39,14 @@ img {
     align-items: center;
 }
 
+.conteudo .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .conteudo .logo h1 {
-    font-size: 5em;
+    font-size: 3em;
     color: var(--text);
     font-weight: bold;
     text-transform: uppercase;
@@ -44,7 +54,7 @@ img {
 }
 
 .conteudo .logo img {
-    margin-bottom: -30px;
+    width: 61px;
 }
 
 .busca {
@@ -81,6 +91,7 @@ img {
     width: 100%;
     max-width: 700px;
     outline: none;
+    background: transparent
 }
 
 .busca input:focus {
@@ -92,9 +103,98 @@ img {
 }
 
 #resposta {
-    max-height: 250px;
+    max-height: 470px;
     width: 90%;
+    max-width: 750px;
     overflow: auto;
+    padding: 10px;
+}
+
+:is(.user, .bot) p {
+    padding: 20px;
+    border-radius: 10px;
+    display: block;
+    margin: 3px 0;
+}
+
+.user, .bot {
+    margin: 15px 0px;
+}
+
+.user p {
+    background-color: #d4dcf7;
+    color: var(--text);
+    text-align: right;
+}
+
+.bot p {
+    background-color: #f8e2e2;
+    color: var(--text);
+    text-align: left;
+}
+
+.bot span {
+    text-align: right;
+}
+
+.user span {
+    text-align: left;
+}
+
+:is(.bot, .user) span {
+    font-size: 0.6em;
+    padding: 0px 11px;
+    display: block;
+}
+
+
+/* ScrollBar */
+
+/* width */
+#resposta::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+#resposta::-webkit-scrollbar-track {
+    background: transparent; 
+}
+   
+/* Handle */
+#resposta::-webkit-scrollbar-thumb {
+    background: #ccc; 
+    border-radius: 10px;
+}
+  
+/* Handle on hover */
+#resposta::-webkit-scrollbar-thumb:hover {
+    background: #888; 
+}
+
+/* BOTAO DE DARK MODE  */
+
+.button-dark {
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+:is(.button-dark, .lixo):hover {
+    opacity: 0.7;
+}
+
+.button-dark img {
+    max-height: 30px;
+}
+
+.button-dark .sol {display: none;}
+
+.lixo {
+    width: 27px;
+    position: absolute;
+    bottom: 10px;
+    left: 6px;
+    cursor: pointer;
 }
 
 

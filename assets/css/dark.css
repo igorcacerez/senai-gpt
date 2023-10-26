@@ -1,0 +1,37 @@
+body.dark {
+    background-color: var(--text);
+}
+
+body.dark .user p {
+    background-color: #fcfcfcae;
+    color: var(--text);
+    text-align: right;
+}
+
+body.dark .bot p {
+    background-color: #fcfcfcf3;
+    color: var(--text);
+    text-align: left;
+}
+
+body.dark .busca input {
+    background-color: transparent;
+    color: var(--text);
+    border-color: #fcfcfcf3;
+    color: #fff;
+}
+
+body.dark .logo h1 {
+    color: #fff;
+}
+
+body.dark .barra-lateral {
+    background-color: #000;
+}
+
+body.dark .barra-lateral .button-dark .sol {display: inline-block;}
+body.dark .barra-lateral .button-dark .lua {display: none;}
+
+body.dark #resposta span {
+    color: #ffffffc0;
+}

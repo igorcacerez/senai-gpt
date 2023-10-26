@@ -13,17 +13,26 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/logo.png" type="image/png">
 
     <!-- Script JS -->
     <script src="assets/js/script.js" defer></script>
+    <script src="assets/js/voz.js" defer></script>
 </head>
 <body>
     
     <!-- Barra vermelha lateral -->
-    <div class="barra-lateral"></div>
+    <div class="barra-lateral">
+        <div class="button-dark">
+            <img src="assets/img/sol.svg" class="sol" alt="SOL">
+            <img src="assets/img/lua.svg" class="lua" alt="LUA">
+        </div>
+
+        <img src="assets/img/trash.svg" class="lixo" alt="Limpar Histórico">
+    </div>
 
     <!-- Todo o conteudo do site -->
     <main class="conteudo">
@@ -33,16 +42,15 @@
             <h1>SENAI GPT</h1>
         </div>
 
+        <!-- Respostas serão exibidas aqui -->
+        <div id="resposta"></div>
+
         <!-- Caixa de Busca -->
         <div class="busca">
             <input id="texto" type="text" placeholder="Faça sua busca" />
             <button type="button" id="btn">
-                <img src="assets/img/microphone.png" alt="Microfone" />
+                <img src="assets/img/microphone.png" id="micro" alt="Microfone" />
             </button>
-        </div>
-
-        <!-- Respostas serão exibidas aqui -->
-        <div id="resposta">
         </div>
 
         <!-- Logo do SENAI -->
