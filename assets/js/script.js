@@ -81,7 +81,8 @@ const buscaRespostaOpenAI = async (texto) => {
             "Authorization": `Bearer ${key}`
         },
         body: JSON.stringify({
-            "model": "ft:gpt-3.5-turbo-0613:duug::8DEKB59q",
+            // "model": "ft:gpt-3.5-turbo-0613:duug::8DEKB59q",
+            "model": "gpt-3.5-turbo",
             "messages": messages
         })
     })
