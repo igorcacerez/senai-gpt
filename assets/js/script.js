@@ -64,7 +64,7 @@ input.addEventListener("keyup", function(event){
 
 const buscaRespostaOpenAI = async (texto) => {
     // Key da API
-    let key = "sk-KC@oyKUZJtrc98NMubjZL@T3Blbk@FJGXJ4EmYqNt0B7Qu@628I2"
+    let key = "sk-ubve@oZfaNtPr8bsQ8d@j7T3BlbkFJHy3lhK2YdrT1@4tB3TxPT"
     key = key.replaceAll("@", "")
 
     // Adiciona a mensagem do usuário
